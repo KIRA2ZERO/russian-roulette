@@ -35,7 +35,7 @@ export function apply(ctx: Context) {
   ctx.command('roulette','俄罗斯轮盘赌').alias(`俄罗斯轮盘赌`)
     .option('number','-n <number:posint> 设定左轮手枪的载弹量,默认值:6发',{fallback:6})
     .option('time','-t <time:posint> 设定左轮手枪的伤害,默认值:600秒',{fallback:600})
-    .usage('使用教程 ')
+    .usage('使用教程 https://github.com/KIRA2ZERO/russian-roulette')
     .example('俄罗斯轮盘赌 -n 9 -t 1800')
     .action(async({session,options}) => {
 

@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-russian-roulette",
   "description": "俄罗斯轮盘赌",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "contributors": [
     "KIRA <914489374@qq.com>"
   ],
@@ -12,10 +12,10 @@
     "dist"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/KIRA2ZERO/koishi-plugin-pool-simulator",
+  "homepage": "https://github.com/KIRA2ZERO/russian-roulette",
   "repository": {
     "type": "github",
-    "url": "git+https://github.com/KIRA2ZERO/koishi-plugin-pool-simulator.git"
+    "url": "git+https://github.com/KIRA2ZERO/russian-roulette.git"
   },
   "scripts": {},
   "keywords": [
@@ -41,4 +41,4 @@
       "zh"
     ]
   }
-} 
+}
