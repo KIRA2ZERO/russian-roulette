@@ -71,7 +71,7 @@ export function apply(ctx: Context) {
           time = row[0].time;
       if(clip[0] == 'bullet'){
         session.send(h('quote',{id:session.messageId})+'你死了');
-        session.bot.muteGuildMember(session.guildId,session.userId,time)
+        session.bot.muteGuildMember(session.guildId,session.userId,time*1000)
         ctx.database.remove('russian_roulette_table',{channel:session.channelId})
       }else{
         clip = clip.slice(1,clip.length)
