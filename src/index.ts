@@ -50,7 +50,7 @@ export function apply(ctx: Context) {
         let number = options.number,
           time = options.time,
           clip = new Array(number).fill(''),
-          random = Math.floor(Math.random()*6);
+          random = Math.floor(Math.random()*number);
         for(let i = 0;i < clip.length; i++){i == random ? clip[i] = 'bullet':0}
         ctx.database.create('russian_roulette_table',{clip:clip,channel:session.channelId,time:time})
         session.send(h('quote',{id:session.messageId})+`载弹量为${number}发杀伤力为${time}秒的左轮手枪已装填,发送【扣下扳机】开枪`)
